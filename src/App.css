@@ -30,22 +30,30 @@ nav>* {
   border-radius: 7px;
 }
 
-.table{
+.table {
   /* border-bottom:solid 1px black; */
 }
 
-.table>div:first-child{
+.table>div:first-child {
   background-color: rgba(128, 128, 128, 0.144);
   font-weight: bold;
   font-size: 20px;
 }
 
-.table > div{
-  display:flex;
-  justify-content:flex-start;
+.table>div {
+  display: flex;
+  justify-content: flex-start;
 
 }
-.table > div>p{
-  padding: 5px 35px;
-width: 80px;
+
+.table>div>p {
+  padding: 0px 35px;
+  margin: 5px;
+  width: 80px;
+}
+
+.table>div>button {
+width: 120px;
+padding:5px;
+margin: 20px;
 }

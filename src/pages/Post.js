@@ -18,11 +18,9 @@ export default function Post() {
     event.preventDefault();
     console.log('read dat')
 
-    axios.post('http://localhost/test/people_post.php', { 
-      inputs 
-    })
+    axios.post('http://localhost/test/people_post.php', { inputs  })
       .then(function (response) {
-        console.log(response);
+        console.log(response.data);
         // console.log(inputs);
       })
       .catch(function (error) {
