@@ -8,6 +8,7 @@ export default function Layout() {
          <nav>
           <Link to="post">Post </Link>
           <Link to="delete">Delete</Link>
+          <Link to="update">Update</Link>
         </nav>
         
         <Outlet/>

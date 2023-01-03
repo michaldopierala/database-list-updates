@@ -21,7 +21,6 @@ export default function Post() {
     axios.post('http://localhost/test/people_post.php', { inputs  })
       .then(function (response) {
         console.log(response.data);
-        // console.log(inputs);
       })
       .catch(function (error) {
         console.log(error);

@@ -6,6 +6,7 @@ import Update from "./pages/Update";
 import Layout from "./pages/Layout";
 import Post from "./pages/Post";
 import Delete from "./pages/Delete";
+// import Update from "./pages/Update";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/update" element={<Layout />}>
              <Route path="post" element={<Post />} />
             <Route path="delete" element={<Delete />} /> 
+            <Route path="update" element={<Update />} /> 
           </Route>
 
         </Routes>

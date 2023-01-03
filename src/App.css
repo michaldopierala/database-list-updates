@@ -21,6 +21,16 @@ nav {
   /* background-color: grey; */
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form label{
+margin: 10px;
+}
+
+
 nav>* {
   text-decoration: none;
   padding: 10px;
@@ -46,7 +56,7 @@ nav>* {
 
 }
 
-.table>div>p {
+.table>div p {
   padding: 0px 35px;
   margin: 5px;
   width: 80px;
@@ -57,3 +67,50 @@ width: 120px;
 padding:5px;
 margin: 20px;
 }
+
+
+
+.update_tb{
+border-bottom: solid 1px black;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.first{
+  width:60%;
+  border-right: black solid 1px;
+}
+
+.table_2 {
+  display: flex;
+  flex-direction: column;
+  align-content: space-be
+
+  }
+
+.table_2>button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  padding:5px;
+  margin: 20px;
+  }
+
+  .table_2>div{
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(211, 208, 208);
+  }
+  .table_2>div>p{
+    margin: 20px;
+font-size: 18px;
+font-weight: bold;
+  }
+  
+  .table_2>button>p {
+    margin: 20px;
+  }
