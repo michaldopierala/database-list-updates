@@ -11,27 +11,29 @@ export default function Home() {
 
 
     useEffect(() => {
-        axios.get('http://localhost/test/axios/people.php')
+        axios.get('http://localhost/test/axios/project1.php')
             .then(function (response) {
                 console.log(response)
                 setData(response.data)
             })
-    }, []); 
+    }, []);
 
 
 
     return (
-        <>
+        <div className='home'>
             <h1>List of people</h1>
 
             <div className='table'>
                 <div >
                     <p>Name</p><p>Surname</p><p>Profesion</p>
                 </div>
-                {data.map((x) => <Person key={x.id} person={x} />)}
+                {/* <div className='test'> */}
+                    {data.map((x) => <Person key={x.id} person={x} />)}
+                {/* </div> */}
             </div>
 
-        </>
+        </div>
 
     )
 }

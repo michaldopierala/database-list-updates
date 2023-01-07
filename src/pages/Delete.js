@@ -27,10 +27,10 @@ export default function Delete() {
 
 
   return (
-    <>
+    <div className='delete'>
       <div className='table'>
         <div >
-          <p>Name</p><p>Surname</p><p>Profesion</p><p>Button</p>
+          <p>Name</p><p>Surname</p><p>Profesion</p><p></p>
         </div>
         {data.map((x) => <div key={x.id}>
           <p>{x.name}</p>
@@ -40,7 +40,7 @@ export default function Delete() {
         </div>)}
 
       </div>
-    </>
+    </div>
 
 
   )

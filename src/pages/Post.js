@@ -18,7 +18,7 @@ export default function Post() {
     event.preventDefault();
     console.log('read dat')
 
-    axios.post('http://localhost/test/people_post.php', { inputs  })
+    axios.post('http://localhost/test/axios/project1.php', { inputs  })
       .then(function (response) {
         console.log(response.data);
       })
@@ -28,7 +28,7 @@ export default function Post() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='post' onSubmit={handleSubmit}>
       <label>Enter name:
         <br />
         <input
@@ -61,7 +61,7 @@ export default function Post() {
         />
       </label>
       <br />
-      <input type="submit" value="submit" />
+      <input type="submit" value="Submit" />
     </form>
   )
 }

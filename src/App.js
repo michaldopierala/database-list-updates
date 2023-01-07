@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 import { useEffect, useState } from 'react'
 import Home from "./pages/Home";
 import Update from "./pages/Update";
@@ -15,17 +15,19 @@ function App() {
   return (
     <>
       <Router>
-        <nav>
-          <Link to="/">Home </Link>
-          <Link to="update">Update Data</Link>
+        <nav className="navigation">
+          <Link className="btn" to="/">Home </Link>
+          <Link className="btn" to="update">Update Data</Link>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} ></Route>
           <Route path="/update" element={<Layout />}>
-             <Route path="post" element={<Post />} />
-            <Route path="delete" element={<Delete />} /> 
-            <Route path="update" element={<Update />} /> 
+            <Route path="" element={<h1 className="select" >Please select your option </h1>} />
+            <Route path="post" element={<Post />} />
+            <Route path="delete" element={<Delete />} />
+            <Route path="update" element={<Update />} />
+
           </Route>
 
         </Routes>

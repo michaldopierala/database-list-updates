@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #00C9A7;
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background: #00d8b4;
+}
+
+input {
+  padding: 10px 20px;
+  background-color: #FBEAFF;
+  border: none;
+  border-radius: 10px;
+}
+
+.navigation {
+  background-color: #845EC2;
+  display: flex;
+  justify-content: center;
+}
+.navigation .btn {
+  padding: 10px 30px;
+  background-color: #B39CD0;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
+}
+.navigation .btn:hover {
+  background-color: #cebfe0;
+}
+
+.home {
+  padding: 20px;
+}
+.home h1 {
+  font-size: 40px;
+  padding: 20px 0px;
+}
+.home .table {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.home .table div {
+  display: flex;
+  flex-direction: row;
+}
+.home .table div:first-child {
+  font-weight: bold;
+  font-size: 25px;
+}
+.home .table div p {
+  width: 100px;
+  margin: 12px 25px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  font-size: 25px;
+}
+.post input {
+  font-size: 25px;
+}
+.post label {
+  margin: 3px;
+  line-height: 1.6;
+}
+.post input[type=submit] {
+  background-color: #00C9A7;
+  width: 180px;
+  margin-top: 30px;
+}
+.post input[type=submit]:hover {
+  cursor: pointer;
+  background: #00e3bc;
+}
+
+.select {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.delete .table {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.delete .table div {
+  display: flex;
+  flex-direction: row;
+}
+.delete .table div:first-child {
+  font-weight: bold;
+  font-size: 25px;
+}
+.delete .table div p {
+  width: 100px;
+  margin: 12px 25px;
+}
+.delete .table button {
+  width: 120px;
+  padding: 5px;
+  height: 35px;
+  margin-left: 50px;
+}
+
+.update {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.update .first {
+  display: flex;
+  flex-direction: column;
+}
+.update .first .tableHead {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.update .first button {
+  display: flex;
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 0;
+  font-size: 15px;
+  background-color: #fcefff;
+}
+.update .first button:hover {
+  background-color: #f6d1ff;
+}
+.update .first p {
+  width: 120px;
+}
+.update .first p:last-child {
+  width: 40%;
+  text-align: left;
+  padding-left: 35px;
+}
+.update .second {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 35px;
+}
+.update .second form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+}
+.update .second form input {
+  font-size: 18px;
+}
+.update .second form label {
+  margin: 3px;
+  line-height: 1.6;
+}
+.update .second form input[type=submit] {
+  background-color: #00C9A7;
+  width: 180px;
+  margin-top: 30px;
+}
+.update .second form input[type=submit]:hover {
+  cursor: pointer;
+  background: #00e3bc;
+}
