@@ -5,19 +5,12 @@ import { BrowserRouter as Router, Link, Routes, Route, Outlet } from "react-rout
 export default function Layout() {
   return (
     <>
-         <nav className='navigation'>
-          <Link className='btn' to="post">Post </Link>
-          <Link className='btn' to="delete">Delete</Link>
-          <Link className='btn' to="update">Update</Link>
-        </nav>
-        
-        <Outlet/>
-    
-    
+      <nav className='navigation'>
+        <Link className='btn' to="post">Post </Link>
+        <Link className='btn' to="delete">Delete</Link>
+        <Link className='btn' to="update">Update</Link>
+      </nav>
+      <Outlet />
     </>
-
-        
-    
-
   )
 }

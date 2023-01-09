@@ -37,13 +37,9 @@ export default function Update() {
   }
 
   function handleChange(e){
-    console.log(e.target.name)
-
-    console.log(e.target.value)
     const name = e.target.name;
     const value = e.target.value;
     setInputs(values => ({ ...values, [name]: value }))
-
   }
 
 

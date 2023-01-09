@@ -21,14 +21,18 @@ function App() {
         </nav>
 
         <Routes>
+
           <Route path="/" element={<Home />} ></Route>
           <Route path="/update" element={<Layout />}>
             <Route path="" element={<h1 className="select" >Please select your option </h1>} />
             <Route path="post" element={<Post />} />
             <Route path="delete" element={<Delete />} />
             <Route path="update" element={<Update />} />
-
           </Route>
+          <Route path='*' element={<h1>Page Not Found </h1>}/>
+
+
+          
 
         </Routes>
       </Router>
